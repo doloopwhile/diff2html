@@ -22,6 +22,7 @@ def main():
 
     for line in fileinput.input(args.files):
         f.write(line)
+    print(f.name)
 
     webbrowser.open(f.name)
 
